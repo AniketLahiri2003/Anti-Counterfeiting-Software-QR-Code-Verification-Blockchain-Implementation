@@ -1,0 +1,151 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+$font-primary: 'Poppins', Arial, sans-serif;
+$primary: #ff0000;
+
+body {
+    font-family: $font-primary;
+    font-size: 18px; /* Increased font size */
+    line-height: 1.8;
+    font-weight: normal;
+    background: #f5f5f5; /* Changed background color to a lighter grey */
+    color: #333; /* Darkened text color */
+}
+
+a {
+    transition: .3s all ease;
+    color: $primary;
+    &:hover,
+    &:focus {
+        text-decoration: none !important;
+        outline: none !important;
+        box-shadow: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: $font-primary;
+    color: #111; /* Darkened heading color */
+    text-transform: lowercase; /* Mixed case for headings */
+    margin-bottom: 20px; /* Added margin bottom */
+}
+
+.bg-primary {
+    background: #ff6666 !important; /* Changed primary background color */
+}
+
+.ftco-section {
+    padding: 7em 0;
+}
+
+.ftco-no-pt {
+    padding-top: 0;
+}
+
+.ftco-no-pb {
+    padding-bottom: 0;
+}
+
+.heading-section {
+    font-size: 32px; /* Increased heading font size */
+    color: #222; /* Darkened heading color */
+    text-transform: uppercase; /* Uppercase headings */
+    margin-bottom: 30px; /* Added margin bottom */
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ftco-navbar-light {
+    background: #333 !important; /* Darkened navbar background color */
+    z-index: 3;
+    padding: 10px; /* Added padding */
+}
+
+.navbar-brand {
+    color: #222; /* Darkened navbar brand color */
+    text-transform: capitalize; /* Capitalized navbar brand text */
+    font-weight: 600; /* Increased font weight */
+    font-size: 24px; /* Increased font size */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Added margin bottom */
+}
+
+.social-media {
+    display: inline-block;
+    p {
+        a {
+            border: 1px solid #ddd; /* Lightened border color */
+            width: 45px; /* Adjusted width */
+            height: 45px; /* Adjusted height */
+            border-radius: 5px; /* Added border radius */
+            margin-right: 6px; /* Adjusted margin */
+            span {
+                color: #666; /* Darkened text color */
+            }
+            &:hover {
+                background: #ff9999; /* Lightened background color on hover */
+                border-color: #ff9999; /* Lightened border color on hover */
+                span {
+                    color: #fff; /* Changed text color on hover */
+                }
+            }
+        }
+    }
+}
+
+.searchform {
+    height: 55px; /* Adjusted height */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 30px; /* Added border radius */
+    .form-control {
+        width: calc(100% - 60px); /* Adjusted width */
+        border: none;
+        background: #fff !important;
+        color: #666 !important; /* Darkened text color */
+        font-size: 16px; /* Adjusted font size */
+    }
+    .search {
+        width: 60px; /* Adjusted width */
+        height: 55px; /* Adjusted height */
+        background: #ff6666 !important; /* Changed search background color */
+        span {
+            font-size: 18px; /* Adjusted font size */
+            color: #fff; /* Changed text color */
+        }
+    }
+}
+
+.form-control {
+    height: 50px !important;
+    background: #fff !important;
+    color: #333 !important; /* Darkened text color */
+    font-size: 16px;
+    border-radius: 5px; /* Added border radius */
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    &:focus,
+    &:active {
+        border-color: #333; /* Darkened border color on focus */
+    }
+}
+
+/* Additional styles to make it look more amateurish can be added here */
+
